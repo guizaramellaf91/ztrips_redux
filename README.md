@@ -3,6 +3,11 @@
 > npm i -g json-server // Subir API local para testes
 File: server.json (api fake)
 
+> immer (manipular imutaveis de forma fácil)
+
+> redux saga
+yarn add redux-saga
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
