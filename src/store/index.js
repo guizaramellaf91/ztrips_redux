@@ -5,9 +5,9 @@ import rootSaga from './modules/rootSaga';
 
 const sagaMiddleware = createSagaMiddleware();
 const enhancer = applyMiddleware(sagaMiddleware);
-
 const store = createStore(rootReducer, enhancer);
 
+// iniciando passando o rootSaga.js
 sagaMiddleware.run(rootSaga);
 
 export default store;
