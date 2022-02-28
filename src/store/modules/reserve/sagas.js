@@ -1,6 +1,7 @@
 import { select, call, put, all, takeLatest } from 'redux-saga/effects';
 import { addReserveSuccess, updateAmountSuccess } from './actions';
 import api from '../../../services/api';
+import history from '../../../services/history';
 
 // dentro do saga nao pode requisicoes http (api.get) <=
 // * = async
@@ -31,6 +32,7 @@ function* addToReserve({ id }) {
             amount: 1
         };
         yield put(addReserveSuccess(data));
+        history.push('/reservas');
     }
 };
 
@@ -43,7 +45,6 @@ function* updateAmount({ id, amount }) {
         return;
     }
     yield put(updateAmountSuccess(id, amount));
-
 }
 
 // listeners - ficar ouvindo

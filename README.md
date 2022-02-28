@@ -2,6 +2,8 @@
 
 > npm i -g json-server // Subir API local para testes
 File: server.json (api fake)
+* colocar delay na API
+3333 -d 2000
 
 > immer (manipular imutaveis de forma fácil)
 
