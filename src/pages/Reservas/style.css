@@ -31,12 +31,12 @@ footer button{
     font-weight: bold;
 }
 
-.reservas #amount{
+.amount{
     display: flex;
     align-items: center;
 }
 
-.reservas #amount input{
+.amount input{
     border: 1px solid #EEE;
     border-radius: 4px;
     color: #242424;
